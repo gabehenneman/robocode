@@ -13,16 +13,22 @@ public class GabeHenneman extends Robot{
         setGunColor(Color.CYAN);
         setRadarColor(Color.MAGENTA);
         setBulletColor(Color.MAGENTA);
+        
+        //double distance = Math.random()*300;
+        //double angle = Math.random()*360;
+        //turnRight(angle);
+        //ahead(distance);
+        turnGunRight(360);
 
         while(true){
-            double distance = Math.random()*300;
-            double angle = Math.random()*360;
-            turnRight(angle);
-            ahead(distance);
+            double distance1 = Math.random()*300;
+            double angle1 = Math.random()*360;
+            turnRight(angle1);
+            ahead(distance1);
             //ahead(100);
             turnGunRight(360);
-            turnLeft(angle);
-            ahead(distance);
+            //turnLeft(angle1);
+            //ahead(distance1);
             //back(100);
             //turnGunRight(360);
             
@@ -50,6 +56,7 @@ public class GabeHenneman extends Robot{
         {
            fire(0.5);
         }
+        
         
         
     // Inverts the gun direction on each turn
