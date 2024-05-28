@@ -15,14 +15,16 @@ public class GabeHenneman extends Robot{
         setBulletColor(Color.MAGENTA);
 
         while(true){
-            double distance = Math.random()*250;
-            double angle = Math.random()*45;
+            double distance = Math.random()*300;
+            double angle = Math.random()*360;
             turnRight(angle);
             ahead(distance);
-            ahead(100);
+            //ahead(100);
             turnGunRight(360);
-            back(100);
-            turnGunRight(360);
+            turnLeft(angle);
+            ahead(distance);
+            //back(100);
+            //turnGunRight(360);
             
         }
 
@@ -49,18 +51,19 @@ public class GabeHenneman extends Robot{
            fire(0.5);
         }
         
+        
     // Inverts the gun direction on each turn
     //gunDirection = -gunDirection;
     // Turn 360 degrees (clockwise or anti clockwise,)
     //setTurnGunRight(360 * gunDirection);
     }
-        public void onHitByBullet(HitByBulletEvent e){
-            back(10);
-            goLeft();
+        //public void onHitByBullet(HitByBulletEvent e){
+            //back(10);
+            //goLeft();
             //double hitleft = Math.random()*300;
             //double hitright= Math.random()*300;
             
-        }
+        //}
     
         public void goLeft(){
             int leftwhile = 1;
