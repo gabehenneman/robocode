@@ -18,7 +18,7 @@ public class GabeHenneman extends Robot{
         //double angle = Math.random()*360;
         //turnRight(angle);
         //ahead(distance);
-        turnGunRight(360);
+        //turnGunRight(360);
 
         while(true){
             double distance1 = Math.random()*300;
